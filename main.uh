@@ -1,0 +1,20 @@
+using System
+using System.Net
+using System.IO
+using System.Text
+Using static System.Net.HttpListener
+namespace MacroShell
+{
+    class Program
+    {
+        public static func Main(args: string[]): void
+        {
+            var cat = "meow"
+            match cat {
+                "meow" => Console.WriteLine("The cat says meow!"),
+                "woof" => Console.WriteLine("The dog says woof!"),
+                _ => Console.WriteLine("Unknown animal sound.")
+            }
+        }
+    }
+}

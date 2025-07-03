@@ -1,0 +1,20 @@
+using uhigh.StdLib
+namespace MacroShell
+{
+    public class Shell
+    {
+        public static denoter: string = "> "
+        public static func Run(): void
+        {
+            var is_running = true
+            while is_running
+            {
+                Console.Write(denoter)
+                var cmd = Console.ReadLine()
+                match cmd{
+                    _ => Console.WriteLine("nope")
+                }
+            }
+        }
+    }
+}
